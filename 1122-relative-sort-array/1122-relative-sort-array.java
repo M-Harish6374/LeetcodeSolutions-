@@ -3,7 +3,7 @@ class Solution {
         int[] arr=new int[arr1.length];
         int k=0;
         for(int i=0;i<arr2.length;i++){
-            for(int j=0;j<arr1.length-1;j++){
+            for(int j=0;j<arr1.length;j++){
                 if(arr2[i]==arr1[j]){
                     arr[k]=arr1[j];
                     k++;
@@ -24,6 +24,7 @@ class Solution {
                 l1.add(arr1[i]);
             }
         }
+
         Collections.sort(l1);
         int l=0;
         for(int i=arr1.length-l1.size();i<arr1.length;i++){
